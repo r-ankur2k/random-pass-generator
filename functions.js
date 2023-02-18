@@ -96,12 +96,12 @@ let stageEl = document.getElementById("generatedPass");
 let stageEl2 = document.getElementById("generatedPass2");
 
 function generateNow() {
-  stageEl.textContent = "";
-  stageEl2.textContent = "";
+  stageEl.textContent = ""
+  stageEl2.textContent = ""
   for (let i = 0; i < 15; i++) {
-    let randomIndex = Math.floor(Math.random() * characters.length);
-    stageEl.textContent += characters[randomIndex];
-    let randomIndex2 = Math.floor(Math.random() * characters.length);
-    stageEl2.textContent += characters[randomIndex2];
+    let randomIndex = Math.floor(Math.random() * characters.length)
+    stageEl.textContent += characters[randomIndex]
+    let randomIndex2 = Math.floor(Math.random() * characters.length)
+    stageEl2.textContent += characters[randomIndex2]
   }
 }
