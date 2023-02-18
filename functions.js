@@ -94,14 +94,15 @@ const characters = [
 
 let stageEl = document.getElementById("generatedPass");
 let stageEl2 = document.getElementById("generatedPass2");
+let myBtn = document.getElementById("myButton");
 
-function generateNow() {
-  stageEl.textContent = ""
-  stageEl2.textContent = ""
+myBtn.addEventListener("click", function generateNow() {
+  stageEl.textContent = "";
+  stageEl2.textContent = "";
   for (let i = 0; i < 15; i++) {
-    let randomIndex = Math.floor(Math.random() * characters.length)
-    stageEl.textContent += characters[randomIndex]
-    let randomIndex2 = Math.floor(Math.random() * characters.length)
-    stageEl2.textContent += characters[randomIndex2]
+    let randomIndex = Math.floor(Math.random() * characters.length);
+    stageEl.textContent += characters[randomIndex];
+    let randomIndex2 = Math.floor(Math.random() * characters.length);
+    stageEl2.textContent += characters[randomIndex2];
   }
-}
+});
